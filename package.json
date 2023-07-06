@@ -5,5 +5,11 @@
   },
   "devDependencies": {
     "vitest": "^0.26.3"
-  }
+  },
+  "name": "gilded-rose-javascript",
+  "description": "Hi and welcome to team Gilded Rose.",
+  "version": "1.0.0",
+  "main": "gilded-rose.js",
+  "author": "",
+  "license": "ISC"
 }
