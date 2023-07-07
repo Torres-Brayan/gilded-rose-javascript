@@ -2,7 +2,7 @@ import { expect, describe, it } from "vitest";
 import {
   ConjuredItem,
   TicketItem,
-  CheeseItem,
+  AgedItem,
   LegendaryItem,
   BaseItem,
   Item,
@@ -22,7 +22,7 @@ describe("updateQuality", () => {
   });
 
   it('"Aged Brie" actually increases in `quality` the older it gets.', () => {
-    const testItem = new CheeseItem("Aged Brie", 2, 0);
+    const testItem = new AgedItem("Aged Brie", 2, 0);
     items.push(testItem);
 
     updateQuality();
@@ -52,7 +52,7 @@ describe("updateQuality", () => {
   });
 
   it("The `quality` of an item is never more than `50`.", () => {
-    const testItem = new CheeseItem("Aged Brie", 2, 49);
+    const testItem = new AgedItem("Aged Brie", 2, 49);
     items.push(testItem);
 
     updateQuality();
